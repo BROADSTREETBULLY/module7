@@ -1,12 +1,14 @@
 import { useState } from "react";
 import AppRoutes from "./components/AppRoutes";
-import { UserProvider } from "./context/UserContext";
+import NavBar from "./components/NavBar";
+import './App.css'
+
 
 function App() {
   return (
-    <UserProvider>
+    <NavBar>
   <AppRoutes></AppRoutes>
-  </UserProvider>
+  </NavBar>
 );
 }
 
